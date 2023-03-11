@@ -43,6 +43,10 @@ img {
   border-radius: 50%;
   object-fit: cover;
 }
+
+#tjs {
+  float: left;
+}
 body > article {
   margin-top: 5rem;
 }
@@ -58,7 +62,7 @@ nav {
   max-height: 42px;
 }
 .nav-item > .nav-link {
-  color: whitesmoke;
+  color: var(--old-gold);
 }
 .nav-item > .nav-link:hover {
   color: var(--sinopia);
