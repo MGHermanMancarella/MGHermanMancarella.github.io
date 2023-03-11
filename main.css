@@ -5,62 +5,96 @@
   --old-gold: #e2c044ff;
   --sinopia: #cc3f0cff;
 }
-/* #home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@font-face {
+  font-family: 'Merriweather';
+  src: url('/Merriweather/Merriweather-Regular.ttf');
 }
-.intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav {
-  display: inline-flex;
-  background-color: rgb(59, 59, 59);
-  color: white;
-}
-html {
-  background-color: #042a2bff;
-}
-.logo {
-  font-family: 'ABeeZee', serif;
-  color: whitesmoke;
-  font-size: 2.5rem;
-  margin-left: 2%;
-  text-shadow: 4px 4px 2px rgb(0, 0, 0);
-}
-.navbar {
-  display: inline-flex;
-  text-align: center;
-}
-ul {
-  list-style: none;
-  margin: 0 25px 0 20px;
-  color: white;
-}
-li {
-  font-family: 'ABeeZee';
-  font-size: 22px;
-  display: inline-block;
-  margin: 0 10px 0 10px;
-  color: whitesmoke;
-}
-hr {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-h1,
-h3 {
-  font-family: 'ABeeZee';
-  margin-left: 10%;
-  margin-right: 10%;
+body {
+  font-family: 'Merriweather', serif;
 }
 
-#home {
-  justify-content: flex-start;
+::selection {
+  background-color: var(--light-cyan);
+  color: black;
 }
-.no-link-style {
-  color: inherit;
+
+h4 > a,
+li > a {
   text-decoration: none;
-} */
+  color: black;
+}
+h4 > a:hover {
+  color: var(--sinopia);
+}
+
+article > aside,
+h1,
+h4,
+div {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+img {
+  float: right;
+  margin: 5px;
+  height: 178px;
+  width: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+body > article {
+  margin-top: 5rem;
+}
+ul > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--dark-green);
+  max-height: 42px;
+}
+.nav-item > .nav-link {
+  color: whitesmoke;
+}
+.nav-item > .nav-link:hover {
+  color: var(--sinopia);
+}
+nav ul {
+  display: inline-block;
+}
+
+/*---------Cards---------*/
+
+div > .card {
+  max-width: 500px;
+  border: 2px;
+  border-color: #e2c044ff;
+}
+.card > .list-group > .list-group-item {
+  border: 0;
+}
+.card li a {
+  background-color: #5eb1bfff;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  display: block;
+  font-family: 'Merriweather', serif;
+  transition: background-color 0.5s, color 0.5s linear,
+    border-radius 2s ease-out;
+}
+
+.card li a:hover {
+  background-color: #e2c044ff;
+  color: black;
+  border-radius: 30px;
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 var(--old-gold), 0 2px 10px 0 var(--dark-green);
+}
