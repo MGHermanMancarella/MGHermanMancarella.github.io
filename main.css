@@ -25,6 +25,7 @@ li > a {
 }
 h4 > a:hover {
   color: var(--sinopia);
+  transition: color 0.4s linear;
 }
 
 article > aside,
@@ -55,14 +56,17 @@ ul > li {
   vertical-align: middle;
 }
 
+/*----------nav-----------*/
+
 nav {
   display: flex;
   justify-content: flex-end;
   background-color: var(--dark-green);
-  max-height: 42px;
+  max-height: 5em;
 }
 .nav-item > .nav-link {
   color: var(--old-gold);
+  transition: color 0.4s linear;
 }
 .nav-item > .nav-link:hover {
   color: var(--sinopia);
@@ -74,7 +78,7 @@ nav ul {
 /*---------Cards---------*/
 
 div > .card {
-  max-width: 500px;
+  max-width: 700px;
   border: 2px;
   border-color: #e2c044ff;
 }
