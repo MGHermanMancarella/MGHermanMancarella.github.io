@@ -9,25 +9,34 @@
   font-family: 'Merriweather';
   src: url('/Merriweather/Merriweather-Regular.ttf');
 }
-body {
+html > body {
   font-family: 'Merriweather', serif;
+  background-color: #5eb1bfff;
 }
 
 ::selection {
   background-color: var(--light-cyan);
   color: black;
 }
-
-h4 > a,
-li > a {
-  text-decoration: none;
+article > h1,
+h4 {
+  color: var(--light-cyan);
+}
+h1 > span {
   color: black;
+  background-color: var(--moonstone);
+}
+h4 > a {
+  text-decoration: none;
+  color: var(--light-cyan);
 }
 h4 > a:hover {
   color: var(--sinopia);
   transition: color 0.4s linear;
 }
-
+article > .container {
+  max-width: 900px;
+}
 article > aside,
 h1,
 h4,
@@ -50,29 +59,42 @@ img {
 }
 body > article {
   margin-top: 5rem;
-}
-ul > li {
-  display: inline-block;
-  vertical-align: middle;
+  margin-bottom: 5rem;
 }
 
 /*----------nav-----------*/
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  background-color: var(--dark-green);
-  max-height: 5em;
+ul > li,
+.nav-group > .nav-item {
+  display: inline-block;
+  align-items: center;
+  margin-right: 2em;
 }
-.nav-item > .nav-link {
+
+body > header > nav {
+  display: flexbox;
+  justify-content: space-between;
+  background-color: var(--dark-green);
+
+  font-family: 'Merriweather', serif;
+}
+nav > #name {
+  color: var(--light-cyan);
+
+  align-self: center;
+  margin-top: 5px;
+  margin-left: 1em;
+}
+
+.nav-group > .nav-item > .nav-link {
   color: var(--old-gold);
   transition: color 0.4s linear;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: flex-end;
 }
 .nav-item > .nav-link:hover {
   color: var(--sinopia);
-}
-nav ul {
-  display: inline-block;
 }
 
 /*---------Cards---------*/
