@@ -6,11 +6,12 @@
   --sinopia: #cc3f0cff;
 }
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'Merriweather' serif;
   src: url('/Merriweather/Merriweather-Regular.ttf');
 }
 html > body {
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather' serif;
+
   background-color: #5eb1bfff;
 }
 
@@ -21,11 +22,16 @@ html > body {
 article > h1,
 h4 {
   color: var(--light-cyan);
+  font-family: 'Fugaz One', cursive;
+  font-size: 2rem;
 }
 h1 > span {
   color: black;
   background-color: var(--moonstone);
+  font-family: 'Fugaz One', cursive;
+  font-size: 3rem;
 }
+
 h4 > a {
   text-decoration: none;
   color: var(--light-cyan);
@@ -36,12 +42,13 @@ h4 > a:hover {
 }
 article > .container {
   max-width: 900px;
+  font-family: 'Merriweather', serif;
 }
 article > aside,
 h1,
 h4,
 div {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -69,21 +76,24 @@ ul > li,
   display: inline-block;
   align-items: center;
   margin-right: 2em;
+  font-family: 'Fugaz One';
+  font-size: x-large;
 }
 
 body > header > nav {
   display: flexbox;
   justify-content: space-between;
   background-color: var(--dark-green);
-
-  font-family: 'Merriweather', serif;
 }
-nav > #name {
+nav > #name,
+h2 {
   color: var(--light-cyan);
 
   align-self: center;
   margin-top: 5px;
   margin-left: 1em;
+  font-family: 'Fugaz One';
+  font-size: 3rem;
 }
 
 .nav-group > .nav-item > .nav-link {
@@ -101,20 +111,26 @@ nav > #name {
 
 div > .card {
   max-width: 700px;
-  border: 2px;
+  border: 3px;
   border-color: #e2c044ff;
 }
 .card > .list-group > .list-group-item {
+  display: block;
+  width: 100%;
   border: 0;
+  font-family: 'Merriweather', serif;
 }
-.card li a {
+.card-title {
+  font-family: 'Fugaz One';
+  font-size: 2em;
+}
+.card > ul > li a {
   background-color: #5eb1bfff;
   text-decoration: none;
   color: white;
   padding: 10px;
   border-radius: 7px;
   display: block;
-  font-family: 'Merriweather', serif;
   transition: background-color 0.5s, color 0.5s linear,
     border-radius 2s ease-out;
 }
