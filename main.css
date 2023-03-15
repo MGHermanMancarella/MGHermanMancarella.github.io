@@ -68,7 +68,9 @@ body > article {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-
+footer {
+  margin-bottom: 2em;
+}
 /*----------nav-----------*/
 
 ul > li,
